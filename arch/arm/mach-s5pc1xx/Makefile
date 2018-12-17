@@ -10,3 +10,6 @@ obj-y	= cache.o
 obj-y	+= reset.o
 
 obj-y	+= clock.o
+
+obj-$(CONFIG_SPL_BUILD)	+= spl.o
+obj-$(CONFIG_SPL_BUILD)	+= timer.o

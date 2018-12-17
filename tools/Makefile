@@ -174,6 +174,9 @@ hostprogs-$(CONFIG_MX23) += mxsboot
 hostprogs-$(CONFIG_MX28) += mxsboot
 HOSTCFLAGS_mxsboot.o := -pedantic
 
+hostprogs-$(CONFIG_ARCH_S5PC1XX) += mks5pc1xxspl
+HOSTCFLAGS_mks5pc1xxspl.o := -pedantic
+
 hostprogs-$(CONFIG_ARCH_SUNXI) += mksunxiboot
 hostprogs-$(CONFIG_ARCH_SUNXI) += sunxi-spl-image-builder
 sunxi-spl-image-builder-objs := sunxi-spl-image-builder.o lib/bch.o

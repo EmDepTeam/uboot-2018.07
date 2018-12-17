@@ -15,6 +15,7 @@ config TARGET_SMDKC100
 config TARGET_QT210
 	bool "Support qt210 board"
 	select OF_CONTROL
+	select SUPPORT_SPL
 endchoice
 
 config SYS_SOC
